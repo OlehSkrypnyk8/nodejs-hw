@@ -19,10 +19,10 @@ app.use(express.json());
 
 app.use(logger);
 
-app.use("/notes", notesRouter);
+
+app.use(notesRouter);
 
 app.use(notFoundHandler);
-
 app.use(errorHandler);
 
 const startServer = async () => {
